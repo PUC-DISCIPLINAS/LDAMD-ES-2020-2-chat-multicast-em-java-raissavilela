@@ -17,7 +17,7 @@
 
 ## Aluno
 
-* Matheus Santos Rosa Carneiro - 613414 - [mcarneirobug](https://github.com/mcarneirobug)
+* Raíssa Carolina Vilela da Silva - 604697 - [raissavilela](https://github.com/raissavilela)
 
 ## Professor responsável
 
