@@ -9,11 +9,18 @@ public class Client {
     
     public static void main(String[]args) 
     { 
+      System.out.println();
+      System.out.println("Olá, você deseja solicitar acesso à sala de bate-papo?");
+      System.out.println("1 - SIM | 2 - NÃO");
+      int answer = in.nextInt();
+
+      if (answer == 1){
       try { 
             InetAddress group = InetAddress.getByName("239.0.0.0");
             int port = Integer.parseInt("4200"); 
 
-            System.out.println("Olá, seja bem-vindo ...");
+            System.out.println();
+            System.out.println("Seja bem-vindo ...");
           
             System.out.println("Você está conectado no HOST: "+group.getHostAddress()+" - PORTA: "+port+ "\n");
             System.out.println("Por favor, insira o seu username: "); 
@@ -49,5 +56,9 @@ public class Client {
           } catch(IOException e){ 
             System.out.println("ERROR: Houve alguma instabilidade no sistema."); 
           } 
-    } 
+      } else {
+        System.out.println();
+        System.out.println("Poxa, que pena! Você optou por não entrar na sala de bate-papo, então você está sendo desconectado...");
+      }
+    }
 } 
